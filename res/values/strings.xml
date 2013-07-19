@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">conversor</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="tLongitud">Conversor de longitudes</string>
+	<string name="tArea">Conversor de areas</string>
+	<string name="tVolumen">Conversor de volúmenes</string>
+	<string name="tPeso">Conversor de masas</string>
+	<string name="tTiempo">Conversor de tiempo</string>
+	<string-array name="elementosMenu">
+	    <item>Longitud</item>
+	    <item>Area</item>
+	    <item>Volumen</item>
+	    <item>Peso</item>
+	    <item>Tiempo</item>
+	    
+	</string-array>
+	
+	<string-array name="udsLongitud">
+	    <item>Kilómetros</item>
+	    <item>Metros</item>
+	    <item>Decímetros</item>
+	    <item>Centímetros</item>
+	    <item>Milímetros</item>
+	    <item>Pulgadas</item>
+	    <item>Pies</item>
+	    <item>Yardas</item>
+	    <item>Millas</item>
+	    <item>Millas náuticas</item>
+	    <item>Leguas</item>
+	    <item>Estadios</item>
+	    <item>Cadeas</item>
+	    <item>Varas</item>
+	    <item>Leguas náuticas</item>
+	    <item>Cables</item>
+	    <item>Brazas inglesas</item>
+	    <item>Brazas españolas</item>
+	</string-array>
+	
+	<string-array name="udsSuperficie">
+	    <item>Acres</item>
+	    <item>Áreas</item>
+	    <item>Pulgadas circulares</item>
+	    <item>Hectáreas</item>
+	    <item>Hides</item>
+	    <item>Roods</item>
+	    <item>Centímetros cuadrados</item>
+	    <item>Pies cuadrados</item>
+	    <item>Pulgadas cuadradas</item>
+	    <item>Kilómetros cuadrados</item>
+	    <item>Millas cuadradas</item>
+	    <item>Milímetros cuadrados</item>
+	    <item>Cuadrados de madera</item>
+	    <item>Varas cuadradas</item>
+	    <item>Yardas cuadradas</item>
+	    <item>Townships</item>
+	</string-array>
+	
+	<string-array name="udsVolumen">
+	    <item>Metros cúbicos</item>
+	    <item>Decímetros cúbicos</item>
+	    <item>Centímetros cúbicos</item>
+	    <item>Milímetros cúbicos</item>
+	    <item>Litros</item>
+	    <item>Mililitros</item>
+	    <item>Onza líquida USA</item>
+	    <item>Onza líquida UK</item>
+	    <item>Pinta USA</item>
+	    <item>Pinta UK</item>
+	    <item>Galón USA</item>
+	    <item>Galón UK</item>
+	    <item>Cucharada</item>
+	    <item>Cucharada UK</item>
+	    <item>Cucharadita</item>
+	    <item>Copita</item>
+	    <item>Copa</item>
+	    <item>Vaso de agua</item>
+	    <item>Teaspoon USA</item>
+	    <item>Teaspoon UK</item>
+	    <item>Yardas cúbicas</item>
+	    <item>Pies cúbicos</item>
+	    <item>Pulgadas cúbicas</item>
+	    <item>Gill USA</item>
+	    <item>Gill UK</item>
+	    <item>Barril de petróleo</item>
+	    <item>Bushel USA</item>
+	    <item>Bushel UK</item>
+	    <item>Peck USA</item>
+	    <item>Peck UK</item>
+	</string-array>
+	
+	<string-array name="udsPeso">
+	   <item>Kilogramos</item>
+	   <item>Gramos</item>
+	   <item>Centigramos</item>  
+	   <item>Miligramos</item>
+	   <item>Microgramos</item>
+	   <item>Nanogramos</item>
+	   <item>Picogramos</item>
+	   <item>Libra</item>
+	   <item>Onza</item>
+	   <item>Onza troy</item>
+	   <item>Arroba castellana</item>
+	   <item>Tonelada métrica</item>
+	   <item>Newton</item>
+	   <item>Cucharada azúcar</item>
+	   <item>Taza azúcar</item>
+	   <item>Taza arroz</item>
+	   <item>Grano de arroz</item>
+	   <item>Quilate</item>
+	   <item>Pennyweight</item>
+	   <item>Stone</item>
+	   <item>Dracma</item>
+	   <item>Catty</item>
+	   <item>Tael</item>
+	   <item>Mace</item>
+	   <item>Fen</item>
+
+	</string-array>
+	
+	<string-array name="udsTiempo">
+	    <item>Nanosegundos</item>
+	    <item>Milisegundos</item>
+	    <item>Segundos</item>
+	    <item>Minutos</item>
+	    <item>Horas</item>
+	    <item>Días</item>
+	    <item>Semanas</item>
+	    <item>Meses</item>
+	    <item>Años</item>
+	    <item>Lustros</item>
+	    <item>Décadas</item>
+	    <item>Siglos</item>
+	    <item>Milenios</item>
+	    <item>Edad de la Tierra</item>
+	    <item>Edad del Universo</item>
+	</string-array>
+	
+</resources>

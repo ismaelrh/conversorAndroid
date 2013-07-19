@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+  <TextView android:id="@+id/lblConversor"
+      		android:layout_width="match_parent"
+      		android:layout_height="wrap_content"
+      		android:textSize="20sp"
+      		android:text="Conversor de unidades"
+      		android:gravity="center_horizontal"
+      		></TextView>
+  
+    <LinearLayout android:orientation="horizontal"
+        	android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+        
+    <!--Primera columna de texto y Spinner -->
+    <LinearLayout android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_weight="1">
+		
+		<EditText android:id="@+id/txtUnidad1" 
+		  android:layout_width="match_parent"
+		   android:layout_height="wrap_content"
+			android:singleLine="true"
+			android:inputType="none"
+			android:textSize="18sp"
+			
+		
+			/>
+		
+		<Spinner android:id="@+id/lstUnidad1"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+			android:layout_gravity="left"
+			
+		    />	
+		    
+			
+		
+		
+		
+	</LinearLayout>
+	
+     <!--Flecha -->
+     <TextView
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+      		android:textSize="40sp"
+      		android:text="="
+      		android:layout_marginTop="23dp"
+      		></TextView>
+     
+	 <!--Segunda columna de texto y Spinner -->
+     <LinearLayout android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_weight="1"
+>
+    
+		<EditText android:id="@+id/txtUnidad2" 
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+			android:singleLine="true"
+			android:textSize="18sp"
+			
+
+			
+			
+			/>
+			
+		    
+		<Spinner android:id="@+id/lstUnidad2"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    />
+		
+
+		
+	</LinearLayout>
+</LinearLayout>
+
+    	<!-- Empieza el teclado -->
+    	<LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		>
+     
+     <Button android:id="@+id/tecBorrarTodo"
+            android:text="Borrar valores"
+            android:layout_width ="match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/holo_red_light"
+            
+        />
+     </LinearLayout>
+    	<!--  PRIMERA FILA DE TECLADO -->
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="-7dp"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		
+		>
+     
+        <Button android:id="@+id/tec1"
+            android:text="1"
+            android:layout_width ="match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_weight="1"
+            
+        />
+        <Button android:id="@+id/tec2"
+            android:text="2"
+            android:layout_width ="match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_weight="1"
+            
+        />
+        
+        <Button android:id="@+id/tec3"
+            android:text="3"
+            android:layout_width ="match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_weight="1"
+        />
+        
+        
+        </LinearLayout>
+        
+    <!--  SEGUNDA FILA DE TECLADO -->
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:layout_marginTop="-7dp"
+		>
+     
+        <Button android:id="@+id/tec4"
+            android:text="4"
+            android:layout_width ="match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_weight="1"
+        />
+        <Button android:id="@+id/tec5"
+            android:text="5"
+            android:layout_width ="match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_weight="1"
+        />
+        
+        <Button android:id="@+id/tec6"
+            android:text="6"
+            android:layout_width ="match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_weight="1"
+        />
+        
+        
+        </LinearLayout>
+
+    <!--  TERCERA FILA DE TECLADO -->
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:layout_marginTop="-7dp"
+		>
+     
+        <Button android:id="@+id/tec7"
+            android:text="7"
+            android:layout_width ="match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_weight="1"
+        />
+        <Button android:id="@+id/tec8"
+            android:text="8"
+            android:layout_width ="match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_weight="1"
+        />
+        
+        <Button android:id="@+id/tec9"
+            android:text="9"
+            android:layout_width ="match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_weight="1"
+        />
+        
+        
+        </LinearLayout>
+        
+     <!--  CUARTA FILA DE TECLADO -->
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:layout_marginTop="-7dp"
+		>
+     
+        <Button android:id="@+id/tec0"
+            android:text="0"
+            android:layout_width ="match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_weight="1"
+        />
+        <Button android:id="@+id/tecPunto"
+            android:text="."
+            android:layout_width ="match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_weight="1"
+        />
+        
+        <Button android:id="@+id/tecBorrar"
+            android:text="&lt;-"
+            android:layout_width ="match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_weight="1"
+        />
+        
+        
+        </LinearLayout>
+</LinearLayout>
+
+
