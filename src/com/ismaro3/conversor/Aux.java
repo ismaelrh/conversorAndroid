@@ -7,6 +7,8 @@ import android.widget.Spinner;
 
 public class Aux {
 
+	/*Cambiar seǵun usuario*/
+	public static int decimales = 4;
 	
 	public static double[] factores;
 	
@@ -68,19 +70,52 @@ public class Aux {
 			resultado = Aux.calcularConversion(valor2,udIzq,udDer);
 			valor1 = resultado;
 		}
-			
-			/*Si el número es exacto (x.00), lo imprimo como entero, para
-			 * ahorrarme los 0's inútiles*/
 		
-			if ((int)Math.round(resultado) == resultado) {
-				txtResultado.setText(String.format(Locale.US,"%d",(int)resultado));  
-				} else {
-				txtResultado.setText(Double.toString(resultado));  
-				}
+		
+			ponerTexto(resultado,txtResultado);
 
 			
 			
 		}
+	/*Formatea adecuadamente y escribe en <texto> el número <numero>*/
 	
+	public static void ponerTexto(double numero, EditText texto){
+		
+		EditText destino = texto;
+		
+		/*Si el número es menor que 10^(-numeroDecimales), entonces lo
+		 * mostramos en notación científica*/
+		
+		if(numero<Math.pow(10,-decimales) && numero!=0.0){
+			destino.setText(MenuConversor.decimalCientifico.format(numero));
+		}
+		/*En otro caso, lo mostramos en notación normal, con los decimales
+		 * recortados*/
+		else{
+			destino.setText(MenuConversor.decimalNormal.format(numero));
+		}
+		
+		
+	}
+	/*Si la cadena contiene el caracter 'E', devuelve su posición. En caso contrario,
+	 * devuelve un número negativo.
+	 */
+	public static int esCientifico(String texto){
+		int posicion = -1;
+		int i = 0;
+		while( i < texto.length() && posicion <0){
+			if(texto.charAt(i) == 'E'){
+				posicion = i;
+			}
+			i++;
+		}
+		return posicion;
+		
+		}
+		
+		
+	}
 	
-}
+
+
+

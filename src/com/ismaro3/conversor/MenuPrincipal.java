@@ -15,7 +15,7 @@ import android.widget.ListView;
 public class MenuPrincipal extends ListActivity {
 
 	public static final String MODO = "MODO";
-	
+
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

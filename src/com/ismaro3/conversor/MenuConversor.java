@@ -1,5 +1,6 @@
 package com.ismaro3.conversor;
 
+import java.text.DecimalFormat;
 import java.util.Locale;
 
 import android.os.Bundle;
@@ -42,7 +43,9 @@ public class MenuConversor extends SherlockActivity {
 	private Button tecBorrarTodo;
 	private int modo;
 	
-
+	
+	public static DecimalFormat decimalCientifico;
+	public static DecimalFormat decimalNormal;
 	
 	/*Guardan la opcion seleccionada en el spinner*/
 	private int seleccSpinner1= 0;
@@ -58,6 +61,12 @@ public class MenuConversor extends SherlockActivity {
 		 */
 		Bundle extras = getIntent().getExtras(); 
 		modo = extras.getInt(MenuPrincipal.MODO);
+		
+		/*Iniciamos la notación de los números, según el número de decimales*/
+		String almohadillas = new String(new char[Aux.decimales-1]).replace("\0", "#");
+		decimalNormal = new DecimalFormat("#." + almohadillas + "#");
+		decimalCientifico = new DecimalFormat("0.0" + almohadillas + "E00");
+
 		
 		// Inicializa campos para poder manipularlos
 	    mTitulo = (TextView) findViewById(R.id.lblConversor);
@@ -225,12 +234,9 @@ public class MenuConversor extends SherlockActivity {
 	        	/*seleccSpinner1 = elemento seleccionado*/
 	        	seleccSpinner1 = seleccionado;	
 	        	
-	        	/*Hacer método que imprima*/
-	        	if ((int)Math.round(Aux.valor1) == Aux.valor1) {
-					mUnidad1.setText(String.format(Locale.US,"%d",(int)Aux.valor1));  
-					} else {
-					mUnidad1.setText(String.format(Locale.US,"%.3f",Aux.valor1));  
-					}
+	        	
+	        	Aux.ponerTexto(Aux.valor1,mUnidad1);
+	        	
 	        	
 	        	
 	        }
@@ -252,11 +258,7 @@ public class MenuConversor extends SherlockActivity {
 	        	/*seleccSpinner2= elemento seleccionado*/
 	        	seleccSpinner2 = seleccionado;	
 	        	
-	        	if ((int)Math.round(Aux.valor2) == Aux.valor2) {
-					mUnidad2.setText(String.format(Locale.US,"%d",(int)Aux.valor2));  
-					} else {
-					mUnidad2.setText(String.format(Locale.US,"%.3f",Aux.valor2));  
-					}
+	        	Aux.ponerTexto(Aux.valor2,mUnidad2);
 
 	        }
 
@@ -318,7 +320,16 @@ public class MenuConversor extends SherlockActivity {
 				}
 				else{
 					/*Borro el ultimo caracter*/
+					int posicionE = Aux.esCientifico(texto);
+					if(posicionE<0){
+						/*No está en notación científica*/
 					texto = texto.substring(0,texto.length()-1);
+					}
+					else{
+						/*Está en notación científica, borro la E*/
+						texto = texto.substring(0,posicionE);
+					}
+					
 				}	
 			}
 			else if(id==12){/*Botón de borrar todo*/
