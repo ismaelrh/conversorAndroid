@@ -10,10 +10,15 @@ package com.ismaro3.conversor;
 public final class R {
     public static final class array {
         public static final int elementosMenu=0x7f0b0000;
+        public static final int udsAngulos=0x7f0b000a;
+        public static final int udsEnergia=0x7f0b0008;
         public static final int udsLongitud=0x7f0b0001;
         public static final int udsPeso=0x7f0b0004;
+        public static final int udsPotencia=0x7f0b0009;
+        public static final int udsPresion=0x7f0b0006;
         public static final int udsSuperficie=0x7f0b0002;
         public static final int udsTiempo=0x7f0b0005;
+        public static final int udsVelocidad=0x7f0b0007;
         public static final int udsVolumen=0x7f0b0003;
     }
     public static final class attr {
@@ -1069,10 +1074,15 @@ containing a value of this type.
         public static final int action_settings=0x7f09000e;
         public static final int app_name=0x7f09000d;
         public static final int hello_world=0x7f09000f;
+        public static final int tAngulos=0x7f090019;
         public static final int tArea=0x7f090011;
+        public static final int tEnergia=0x7f090017;
         public static final int tLongitud=0x7f090010;
         public static final int tPeso=0x7f090013;
+        public static final int tPotencia=0x7f090018;
+        public static final int tPresion=0x7f090015;
         public static final int tTiempo=0x7f090014;
+        public static final int tVelocidad=0x7f090016;
         public static final int tVolumen=0x7f090012;
     }
     public static final class style {

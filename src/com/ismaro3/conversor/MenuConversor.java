@@ -97,35 +97,66 @@ public class MenuConversor extends SherlockActivity {
 	    /*Prepara la interfaz según el modo de conversión seleccionado*/
 	    switch(modo){
 	    case 0:
-	    	mTitulo.setText(R.string.tLongitud);
+	    	this.setTitle(R.string.tLongitud);
+	    	
 	    	Aux.factores = Aux.equivLongitud;
 	    	
 		     adapter = ArrayAdapter.createFromResource(this,
 		         R.array.udsLongitud, android.R.layout.simple_spinner_item);
 	    	break;
 	    case 1:
-	    	mTitulo.setText(R.string.tArea);
+	    	this.setTitle(R.string.tArea);
 	    	Aux.factores = Aux.equivSuperficie;
 		     adapter = ArrayAdapter.createFromResource(this,
 		         R.array.udsSuperficie, android.R.layout.simple_spinner_item);
 	    	break;
 	    case 2:
-	    	mTitulo.setText(R.string.tVolumen);
+	    	this.setTitle(R.string.tVolumen);
 	    	Aux.factores = Aux.equivVolumen;
 		     adapter = ArrayAdapter.createFromResource(this,
 		         R.array.udsVolumen, android.R.layout.simple_spinner_item);
 	    	break;
 	    case 3:
-	    	mTitulo.setText(R.string.tPeso);
+	    	this.setTitle(R.string.tPeso);
 	    	Aux.factores = Aux.equivPeso;
 		     adapter = ArrayAdapter.createFromResource(this,
 		         R.array.udsPeso, android.R.layout.simple_spinner_item);
 	    	break;
 	    case 4:
-	    	mTitulo.setText(R.string.tTiempo);
+	    	this.setTitle(R.string.tTiempo);
 	    	Aux.factores = Aux.equivTiempo;
 		     adapter = ArrayAdapter.createFromResource(this,
 		         R.array.udsTiempo, android.R.layout.simple_spinner_item);
+	    	break;
+	    case 5:
+	    	this.setTitle(R.string.tPresion);
+	    	Aux.factores = Aux.equivPresion;
+		     adapter = ArrayAdapter.createFromResource(this,
+		         R.array.udsPresion, android.R.layout.simple_spinner_item);
+	    	break;
+	    case 6:
+	    	this.setTitle(R.string.tVelocidad);
+	    	Aux.factores = Aux.equivVelocidad;
+		     adapter = ArrayAdapter.createFromResource(this,
+		         R.array.udsVelocidad, android.R.layout.simple_spinner_item);
+	    	break;
+	    case 7:
+	    	this.setTitle(R.string.tEnergia);
+	    	Aux.factores = Aux.equivEnergia;
+		     adapter = ArrayAdapter.createFromResource(this,
+		         R.array.udsEnergia, android.R.layout.simple_spinner_item);
+	    	break;
+	    case 8:
+	    	this.setTitle(R.string.tPotencia);
+	    	Aux.factores = Aux.equivPotencia;
+		     adapter = ArrayAdapter.createFromResource(this,
+		         R.array.udsPotencia, android.R.layout.simple_spinner_item);
+	    	break;
+	    case 9:
+	    	this.setTitle(R.string.tAngulos);
+	    	Aux.factores = Aux.equivAngulos;
+		     adapter = ArrayAdapter.createFromResource(this,
+		         R.array.udsAngulos, android.R.layout.simple_spinner_item);
 	    	break;
 	    	
 	    }

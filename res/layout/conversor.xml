@@ -8,7 +8,7 @@
       		android:layout_width="match_parent"
       		android:layout_height="wrap_content"
       		android:textSize="20sp"
-      		android:text="Conversor de unidades"
+      		android:text="Introduzca los datos:"
       		android:gravity="center_horizontal"
       		></TextView>
   

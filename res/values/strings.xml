@@ -9,12 +9,22 @@
 	<string name="tVolumen">Conversor de volúmenes</string>
 	<string name="tPeso">Conversor de masas</string>
 	<string name="tTiempo">Conversor de tiempo</string>
+	<string name="tPresion">Conversor de presiones</string>
+	<string name="tVelocidad">Conversor de velocidades</string>
+	<string name="tEnergia">Conversor de energías</string>
+	<string name="tPotencia">Conversor de potencias</string>
+	<string name="tAngulos">Conversor de ángulos</string>
 	<string-array name="elementosMenu">
 	    <item>Longitud</item>
 	    <item>Area</item>
 	    <item>Volumen</item>
 	    <item>Peso</item>
 	    <item>Tiempo</item>
+	    <item>Presión</item>
+	    <item>Velocidad</item>
+	    <item>Energía</item>
+	    <item>Potencia</item>
+	    <item>Ángulos</item>
 	    
 	</string-array>
 	
@@ -138,4 +148,77 @@
 	    <item>Edad del Universo</item>
 	</string-array>
 	
+	<string-array name="udsPresion">
+	    <item>Pascales</item>
+	    <item>Kilopascales</item>
+	    <item>Newtons/metro cuad.</item>
+	    <item>Atmósferas</item>
+	    <item>(mmHg)Torr</item>
+	    <item>Bar</item>
+	    <item>(psi)Libras/pulgada cuad.</item>
+	    <item>Kg/cm2</item>
+	    <item>Libras/pie cuad.</item>
+	    <item>(inHg)Pulgada de mercurio</item>
+	    <item>mmH2O</item>
+	    <item>Pulgadas de H20</item>
+	</string-array>
+	
+	<string-array name="udsVelocidad">
+	    <item>(m/s) Metros/segundo</item>
+	    <item>(kph) Kilómetros/hora</item>
+	    <item>Kilómetros/minuto</item>
+	    <item>Kilómetros/segundo</item>
+	    <item>(mph) Millas/hora</item>
+	    <item>Millas/minuto</item>
+	    <item>Millas/segundo</item>
+	    <item>Pulgadas/minuto</item>
+	    <item>Pulgadas/segundo</item>
+	    <item>Pies/minuto</item>
+	    <item>Pies/segundo</item>
+	    <item>Nudo</item>
+	    <item>Velocidad de la luz</item>
+	</string-array>
+	
+	<string-array name="udsEnergia">
+	    <item>(J) Julios</item>
+	    <item>(kJ) Kilojulios</item>
+	    <item>(MJ) Megajulios</item>
+	    <item>(kWh) Kilovatios-hora</item>
+	    <item>(Wh) Vatios-hora</item>
+	    <item>(Ws) Vatios-segundo</item>
+	    <item>(cal) Calorías</item>
+	    <item>(cal) Calorías de alimentos</item>
+	    <item>(kcal) Kilocalorías</item>
+	    <item>(kcal) Kilocalorías de alimentos</item>
+	    <item>(Mcal) Megacalorías</item>
+	    <item>(eV) Electronvoltios</item>
+	    <item>(erg) Ergios</item>
+	    <item>(Btu) British Thermal Unit</item>
+	</string-array>
+	
+	<string-array name="udsPotencia">
+	    <item>(W) Vatios</item>
+	    <item>(kW) Kilovatios</item>
+	    <item>(MW) Megavatios</item>
+	    <item>dBm</item>
+	    <item>(cal/h) Calorías/hora</item>
+	    <item>(cal/s) Calorías/segundo</item>
+	    <item>(Kcal/h) Kilocalorías/hora</item>
+	    <item>(Kcal/s) Kilocalorías/segundo</item>
+	    <item>(CV) Caballo de vapor</item>
+	    <item>(HP) Caballo de potencia</item>
+	    <item>(J/h) Julios/hora</item>
+	    <item>(J/s) Julios/segundo</item>
+	    <item>(Ft-lbF/s) Foot-pound/segundo</item>
+	</string-array>
+	
+	<string-array name="udsAngulos">
+	    <item>Grados</item>
+	    <item>Minutos</item>
+	    <item>Segundos</item>
+	    <item>Radianes</item>
+	    <item>Gradianes</item>
+	    <item>Mil angular</item>
+	    
+	</string-array>
 </resources>
