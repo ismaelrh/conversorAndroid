@@ -9,17 +9,21 @@ package com.ismaro3.conversor;
 
 public final class R {
     public static final class array {
-        public static final int elementosMenu=0x7f0b0000;
-        public static final int udsAngulos=0x7f0b000a;
-        public static final int udsEnergia=0x7f0b0008;
-        public static final int udsLongitud=0x7f0b0001;
-        public static final int udsPeso=0x7f0b0004;
-        public static final int udsPotencia=0x7f0b0009;
-        public static final int udsPresion=0x7f0b0006;
-        public static final int udsSuperficie=0x7f0b0002;
-        public static final int udsTiempo=0x7f0b0005;
-        public static final int udsVelocidad=0x7f0b0007;
-        public static final int udsVolumen=0x7f0b0003;
+        public static final int decimales=0x7f0b000e;
+        public static final int descripcionMenu=0x7f0b0001;
+        public static final int imagenesMenu=0x7f0b0002;
+        public static final int titulosMenu=0x7f0b0000;
+        public static final int udsAngulos=0x7f0b000c;
+        public static final int udsBits=0x7f0b000d;
+        public static final int udsEnergia=0x7f0b000a;
+        public static final int udsLongitud=0x7f0b0003;
+        public static final int udsPeso=0x7f0b0006;
+        public static final int udsPotencia=0x7f0b000b;
+        public static final int udsPresion=0x7f0b0008;
+        public static final int udsSuperficie=0x7f0b0004;
+        public static final int udsTiempo=0x7f0b0007;
+        public static final int udsVelocidad=0x7f0b0009;
+        public static final int udsVolumen=0x7f0b0005;
     }
     public static final class attr {
         /**  Custom divider drawable to use for elements in the action bar. 
@@ -923,7 +927,9 @@ containing a value of this type.
         public static final int abs__textfield_searchview_right_holo_dark=0x7f02006d;
         public static final int abs__textfield_searchview_right_holo_light=0x7f02006e;
         public static final int abs__toast_frame=0x7f02006f;
-        public static final int ic_launcher=0x7f020070;
+        public static final int background=0x7f020070;
+        public static final int ic_launcher=0x7f020071;
+        public static final int icono=0x7f020072;
     }
     public static final class id {
         public static final int abs__action_bar=0x7f040020;
@@ -965,15 +971,18 @@ containing a value of this type.
         public static final int abs__textButton=0x7f040013;
         public static final int abs__title=0x7f04001b;
         public static final int abs__up=0x7f04000b;
-        public static final int action_settings=0x7f040045;
+        public static final int action_settings=0x7f04004a;
+        public static final int desc=0x7f040048;
         public static final int disableHome=0x7f040009;
         public static final int edit_query=0x7f040026;
         public static final int homeAsUp=0x7f040006;
+        public static final int icon=0x7f040046;
         public static final int lblConversor=0x7f040032;
         public static final int listMode=0x7f040002;
         public static final int lstUnidad1=0x7f040034;
         public static final int lstUnidad2=0x7f040036;
         public static final int normal=0x7f040001;
+        public static final int seekBar1=0x7f040044;
         public static final int showCustom=0x7f040008;
         public static final int showHome=0x7f040005;
         public static final int showTitle=0x7f040007;
@@ -991,7 +1000,9 @@ containing a value of this type.
         public static final int tecBorrar=0x7f040043;
         public static final int tecBorrarTodo=0x7f040037;
         public static final int tecPunto=0x7f040042;
-        public static final int text1=0x7f040044;
+        public static final int text1=0x7f040049;
+        public static final int textView1=0x7f040045;
+        public static final int title=0x7f040047;
         public static final int txtUnidad1=0x7f040033;
         public static final int txtUnidad2=0x7f040035;
         public static final int useLogo=0x7f040004;
@@ -1023,10 +1034,13 @@ containing a value of this type.
         public static final int abs__search_view=0x7f030013;
         public static final int abs__simple_dropdown_hint=0x7f030014;
         public static final int activity_menu_principal=0x7f030015;
-        public static final int conversor=0x7f030016;
-        public static final int fila_lista=0x7f030017;
-        public static final int sherlock_spinner_dropdown_item=0x7f030018;
-        public static final int sherlock_spinner_item=0x7f030019;
+        public static final int ajustes=0x7f030016;
+        public static final int conversor=0x7f030017;
+        public static final int decimales=0x7f030018;
+        public static final int fila_imagen=0x7f030019;
+        public static final int fila_lista=0x7f03001a;
+        public static final int sherlock_spinner_dropdown_item=0x7f03001b;
+        public static final int sherlock_spinner_item=0x7f03001c;
     }
     public static final class menu {
         public static final int menu_principal=0x7f0c0000;
@@ -1076,6 +1090,7 @@ containing a value of this type.
         public static final int hello_world=0x7f09000f;
         public static final int tAngulos=0x7f090019;
         public static final int tArea=0x7f090011;
+        public static final int tBits=0x7f09001a;
         public static final int tEnergia=0x7f090017;
         public static final int tLongitud=0x7f090010;
         public static final int tPeso=0x7f090013;
@@ -1086,6 +1101,7 @@ containing a value of this type.
         public static final int tVolumen=0x7f090012;
     }
     public static final class style {
+        public static final int ActionBarStyle=0x7f0a005b;
         /** 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
@@ -1108,9 +1124,6 @@ containing a value of this type.
  API 14 theme customizations can go here. 
          */
         public static final int AppBaseTheme=0x7f0a0059;
-        /**  Application theme. 
- All customizations that are NOT specific to a particular API-level can go here. 
-         */
         public static final int AppTheme=0x7f0a005a;
         public static final int Sherlock___TextAppearance_Small=0x7f0a0046;
         public static final int Sherlock___Theme=0x7f0a0051;

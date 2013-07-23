@@ -1,6 +1,7 @@
 package com.ismaro3.conversor;
 
 import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
 import java.util.Locale;
 
 import android.os.Bundle;
@@ -64,8 +65,10 @@ public class MenuConversor extends SherlockActivity {
 		
 		/*Iniciamos la notación de los números, según el número de decimales*/
 		String almohadillas = new String(new char[Aux.decimales-1]).replace("\0", "#");
-		decimalNormal = new DecimalFormat("#." + almohadillas + "#");
-		decimalCientifico = new DecimalFormat("0.0" + almohadillas + "E00");
+		DecimalFormatSymbols otrosSimbolos = new DecimalFormatSymbols(Locale.US);
+		otrosSimbolos.setDecimalSeparator('.');
+		decimalNormal = new DecimalFormat("#." + almohadillas + "#",otrosSimbolos);
+		decimalCientifico = new DecimalFormat("0.0" + almohadillas + "E00",otrosSimbolos);
 
 		
 		// Inicializa campos para poder manipularlos
@@ -158,7 +161,13 @@ public class MenuConversor extends SherlockActivity {
 		     adapter = ArrayAdapter.createFromResource(this,
 		         R.array.udsAngulos, android.R.layout.simple_spinner_item);
 	    	break;
-	    	
+	    
+	    case 10:
+	    	this.setTitle(R.string.tBits);
+	    	Aux.factores = Aux.equivBits;
+		     adapter = ArrayAdapter.createFromResource(this,
+		         R.array.udsBits, android.R.layout.simple_spinner_item);
+	    	break;
 	    }
 	    
 	   //Especifica el layout que usar cuando se despliegue el menú.

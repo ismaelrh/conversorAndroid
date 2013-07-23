@@ -54,6 +54,12 @@ public class Aux {
 	public static final double[] equivAngulos = new double[]
 			{1,0.0166666667,2.7777777778E-4,57.2957795786,0.9,0.05625
 			};
+	
+	public static final double[] equivBits = new double[]
+			{0.125,128,131072,1.34217728E8,1.3743895353E11,1.407374883E14,1,1024,1048576,
+			1.0737418284E9,1.0995116236E12, 1.1258999052E15, 7.340032E8,4.7029892084E9,
+			2.684354571E10,1509949.44};
+	
 	public static double valor1 = 0.0;
 	public static double valor2 = 0.0;
 	/*Convierte el valor expresado en la unidad1 a la unidad2*/

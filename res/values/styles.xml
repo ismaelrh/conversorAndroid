@@ -12,9 +12,15 @@
         -->
     </style>
 
-    <!-- Application theme. -->
-    <style name="AppTheme" parent="AppBaseTheme">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
-    </style>
+    <style name="AppTheme" parent="@android:style/Theme.Holo.Light">
+    	<item name="android:actionBarStyle">@style/ActionBarStyle</item>
+	</style>
 
+<style name="ActionBarStyle" parent="android:style/Widget.Holo.Light.ActionBar">     
+    <item name="android:colorBackground">#FFFFFF</item>
+    <item name="android:background">#0099CC</item>
+    <item name="android:textColor">@android:color/black</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textSize">16sp</item>
+</style>
 </resources>

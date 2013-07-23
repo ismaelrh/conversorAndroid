@@ -14,7 +14,9 @@
 	<string name="tEnergia">Conversor de energías</string>
 	<string name="tPotencia">Conversor de potencias</string>
 	<string name="tAngulos">Conversor de ángulos</string>
-	<string-array name="elementosMenu">
+	<string name="tBits">Conversor de bits</string>
+	
+	<string-array name="titulosMenu">
 	    <item>Longitud</item>
 	    <item>Area</item>
 	    <item>Volumen</item>
@@ -25,6 +27,35 @@
 	    <item>Energía</item>
 	    <item>Potencia</item>
 	    <item>Ángulos</item>
+	    <item>Bits</item>
+	</string-array>
+	
+	<string-array name="descripcionMenu">
+	    <item>Metros,pulgadas,pies...</item>
+	    <item>Acres, metros cuadrados, áreas...</item>
+	    <item>Metros cúbicos, galones, pintas...</item>
+	    <item>Kg, libras, quilates, arrobas...</item>
+	    <item>Segundos, días, semanas, años...</item>
+	    <item>Pascales, atmósferas, bares...</item>
+	    <item>Km/h, Millas/h, nudos, m/s...</item>
+	    <item>Julios, Vatios-hora, calorías...</item>
+	    <item>Vatios, dbM,  Julios/hora...</item>
+	    <item>Grados, minutos, radianes...</item>
+	    <item>Bits, Bytes, Kilobits, Gigabits...</item>
+	</string-array>
+	
+	<string-array name="imagenesMenu">
+	    <item>R.drawable.icono</item>
+	    <item>R.drawable.icono</item>
+	    <item>R.drawable.icono</item>
+	    <item>R.drawable.icono</item>
+	    <item>R.drawable.icono</item>
+	    <item>R.drawable.icono</item>
+	    <item>R.drawable.icono</item>
+	    <item>R.drawable.icono</item>
+	    <item>R.drawable.icono</item>
+	    <item>R.drawable.icono</item>
+	    <item>R.drawable.icono</item>
 	    
 	</string-array>
 	
@@ -220,5 +251,37 @@
 	    <item>Gradianes</item>
 	    <item>Mil angular</item>
 	    
+	</string-array>
+	
+	<string-array name="udsBits">
+	    <item>(b) Bits</item>
+	    <item>(Kb) Kilobits</item>
+	    <item>(Mb) Megabits</item>
+	    <item>(Gb) Gigabits</item>
+	    <item>(Tb) Terabits</item>
+	    <item>(Pb) Petabits</item>
+	    <item>(B) Bytes</item>
+	    <item>(KB) Kilobytes</item>
+	    <item>(MB) Megabytes</item>
+	    <item>(GB) Gigabytes</item>
+	    <item>(TB) Terabytes</item>
+	    <item>(PB) Petabytes</item>
+	    <item>CD-ROM</item>
+	    <item>DVD</item>
+	    <item>Blu-Ray</item>
+	    <item>Disquete</item>
+	</string-array>
+	
+	<string-array name="decimales">
+	    <item>1</item>
+	    <item>2</item>
+	    <item>3</item>
+	    <item>4</item>
+	    <item>5</item>
+	    <item>6</item>
+	    <item>7</item>
+	    <item>8</item>
+	    <item>9</item>
+	    <item>10</item>
 	</string-array>
 </resources>
